@@ -1,7 +1,7 @@
 from pyspark.sql.functions import col
 
 
-def flatten_df(nested_df):
+def json_normalize(nested_df):
     stack = [((), nested_df)]
     columns = []
 
